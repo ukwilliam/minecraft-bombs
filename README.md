@@ -1,14 +1,19 @@
-Minecraft Instabombs.
+#Minecraft Instabombs
 
 Create instabombs by right clicking.
 
-Made by www.stuffaboutcode.com and modded by @williamsthing.
+#Credits
 
-Original: https://github.com/martinohanlon/minecraft-bombs
+www.stuffaboutcode.com and modded by @williamsthing.
 
-Install:
+#Original 
+https://github.com/martinohanlon/minecraft-bombs
+
+#Install
+        ```
         sudo apt-get install git-core
         cd ~
         git clone https://github.com/ukwilliam/minecraft-bombs.git
         cd minecraft-bombs
         python minecraft-bombs.py
+        ```
