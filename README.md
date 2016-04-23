@@ -1,15 +1,14 @@
--------------------------------------------------------------------------------
-Minecraft - Bombs
-Martin O'Hanlon (martin@ohanlonweb.com)
-http://www.stuffaboutcode.com
--------------------------------------------------------------------------------
+Minecraft Instabombs.
 
-A program which creates bombs out of blocks when the user hits them for Minecraft: Pi edition
-http://www.stuffaboutcode.com/2013/05/raspberry-pi-minecraft-block-events.html
+Create instabombs by right clicking.
 
-------------------------------------------------------------------------------
+Made by www.stuffaboutcode.com and modded by @williamsthing.
 
-Version history
-0.1 - first beta release
+Original: https://github.com/martinohanlon/minecraft-bombs
 
--------------------------------------------------------------------------------
+Install:
+        sudo apt-get install git-core
+        cd ~
+        git clone https://github.com/ukwilliam/minecraft-bombs.git
+        cd minecraft-bombs
+        python minecraft-bombs.py
