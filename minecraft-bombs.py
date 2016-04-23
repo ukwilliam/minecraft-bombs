@@ -1,5 +1,5 @@
-#www.stuffaboutcode.com
-#Raspberry Pi, Minecraft Bombs - Turn any block into a bomb!
+#www.stuffaboutcode.com and @williamsthing
+#Raspberry Pi, Minecraft Bombs - Turn any block into a bomb instantly!
 
 #import the minecraft.py module from the minecraft directory
 import minecraft.minecraft as minecraft
@@ -30,12 +30,6 @@ class ExplodingBlock(threading.Thread):
         #Explode the block!
         # get block type
         blockType = mc.getBlock(pos.x, pos.y, pos.z)
-        # flash the block
-        for fuse in range(0, self.fuseInSecs):
-            mc.setBlock(pos.x, pos.y, pos.z, block.AIR)
-            time.sleep(0.5)
-            mc.setBlock(pos.x, pos.y, pos.z, blockType)
-            time.sleep(0.5)
         # create sphere of air
         for x in range(blastRadius*-1,blastRadius):
             for y in range(blastRadius*-1, blastRadius):
@@ -51,7 +45,7 @@ if __name__ == "__main__":
     mc = minecraft.Minecraft.create()
 
     #Post a message to the minecraft chat window 
-    mc.postToChat("Minecraft Bombs, Hit (Right Click) a Block, www.stuffaboutcode.com")
+    mc.postToChat("Minecraft Bombs, Hit (Right Click) a Block Instantly! Made by www.stuffaboutcode.com and modded by @williamsthing")
 
     #loop until Ctrl C
     try:
